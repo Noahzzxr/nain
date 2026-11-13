@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — NAIN</title>
+  <meta name="description" content="Finalize sua compra NAIN em quatro etapas: identificação, endereço, entrega e pagamento.">
+  <meta name="theme-color" content="#0B0A08">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduce-motion');
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="checkout">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <header class="page-head" style="padding-bottom:1.5rem">
+      <nav aria-label="Você está em"><ol class="crumbs"><li><a href="index.html">Início</a></li><li><a href="carrinho.html">Carrinho</a></li><li aria-current="page">Checkout</li></ol></nav>
+      <h1 class="display" style="font-size:var(--fs-h2)">Checkout</h1>
+    </header>
+    
+    <ol class="steps" data-steps aria-label="Etapas do checkout"></ol>
+    
+    <div class="checkout" data-checkout-layout>
+      <div data-checkout></div>
+      <aside class="summary" data-summary aria-label="Resumo do pedido"></aside>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

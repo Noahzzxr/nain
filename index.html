@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NAIN — Levanta-te · Streetwear cristão</title>
+  <meta name="description" content="NAIN é streetwear cristão premium: camisetas e moletons em algodão pesado, inspirados em Lucas 7:14. Da morte para a vida.">
+  <meta name="theme-color" content="#0B0A08">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduce-motion');
+      try { if (sessionStorage.getItem('nain:loaded')) d.classList.add('no-loader'); } catch (e) {}
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#colecao">Pular para a coleção</a>
+
+  <!-- loader inicial (só na primeira visita da sessão) -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__logo"><span style="--i:0">N</span><span style="--i:1">A</span><span style="--i:2">I</span><span style="--i:3">N</span><i></i></div>
+    <div class="loader__line"></div>
+  </div>
+
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <!-- 1. HERO "LEVANTA-TE" — sequência fixa guiada por scroll -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__sticky">
+
+        <!-- camada escura (tons de cinza) -->
+        <div class="hero__dark" aria-hidden="true">
+          <div class="hero__watermark">NAIN</div>
+          <div class="hero__spot"><div class="hero__spot-inner"><div class="hero__watermark">NAIN</div></div></div>
+          <div class="hero__title hero__title--dark" data-text="LEVANTA-|TE">LEVANTA-TE</div>
+        </div>
+
+        <div class="hero__halo" aria-hidden="true"></div>
+
+        <!-- camada iluminada: revelada por um círculo que cresce a partir do ponto de luz -->
+        <div class="hero__lit">
+          <div class="hero__disc" aria-hidden="true"></div>
+          <h1 class="hero__title hero__title--lit" id="hero-title" aria-label="Levanta-te" data-text="LEVANTA-|TE">LEVANTA-TE</h1>
+        </div>
+
+        <!-- a peça que se levanta -->
+        <div class="hero__garment" aria-hidden="true"><div class="hero__garment-inner"></div></div>
+
+        <p class="hero__meta" aria-hidden="true">Lucas 7:11–17<br>Naim, Galileia</p>
+        <p class="hero__meta hero__meta--r" aria-hidden="true">Coleção 01<br>Da morte para a vida</p>
+        <p class="hero__hint" aria-hidden="true">Role para despertar</p>
+
+        <div class="hero__end">
+          <p class="hero__verse">
+            <span class="eyebrow">Coleção 01 — Da morte para a vida</span>
+            <q>Jovem, eu te digo: <span style="white-space:nowrap">levanta-te.</span></q>
+            <span class="caps">Lucas 7:14</span>
+          </p>
+          <div class="hero__cta">
+            <span class="small" data-hero-piece></span>
+            <a class="btn btn--accent" href="catalogo.html">Ver coleção
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. MARQUEE de versículos -->
+    <section class="marquee" aria-label="Versículos que inspiram a coleção">
+      <div class="marquee__track" data-marquee></div>
+    </section>
+
+    <!-- 3. COLEÇÃO EM DESTAQUE -->
+    <section class="section featured" id="colecao" aria-labelledby="colecao-title">
+      <header class="section__head">
+        <p class="eyebrow" data-reveal>Coleção 01</p>
+        <h2 class="display display--lg" id="colecao-title" data-reveal="lines">Da morte<br><em>para a vida</em></h2>
+        <div class="section__aside" data-reveal style="--d:.15s">
+          <p class="lead">Uma coleção, um só enredo: o instante em que a escuridão perde. Algodão pesado, estampa com atitude, mensagem alta.</p>
+          <a class="link-arrow" href="catalogo.html">Ver coleção completa
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg>
+          </a>
+        </div>
+      </header>
+      <div class="featured__grid" data-featured></div>
+    </section>
+
+    <!-- 4. O VERSÍCULO POR TRÁS DA PEÇA — scroll horizontal -->
+    <section class="verses on-dark" id="versiculos" aria-labelledby="versiculos-title">
+      <div class="verses__sticky">
+        <div class="verses__track">
+          <div class="vintro">
+            <p class="eyebrow" data-reveal>Estampa &amp; Escritura</p>
+            <h2 class="display" id="versiculos-title" data-reveal="lines">O versículo<br>por trás<br><em>da peça</em></h2>
+            <p class="lead" data-reveal style="--d:.15s">Nenhuma estampa nasce de tendência. Cada uma começa em um texto — e termina no seu corpo.</p>
+            <p class="vintro__hint caps" data-reveal style="--d:.25s">Continue rolando
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg>
+            </p>
+          </div>
+        </div>
+        <div class="verses__progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- 5. CATEGORIAS -->
+    <section class="cats" aria-label="Categorias">
+      <a class="cat cat--light" href="catalogo.html?categoria=camisetas" data-cat="camisetas" data-reveal="fade">
+        <div class="cat__img"></div>
+        <div class="cat__mask"></div>
+        <div class="cat__top"><span class="caps">01</span><span class="caps" data-cat-meta></span></div>
+        <div class="cat__label">
+          <h3>Camisetas</h3>
+          <span class="cat__arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="cat cat--light" href="catalogo.html?categoria=moletons" data-cat="moletons" data-reveal="fade">
+        <div class="cat__img"></div>
+        <div class="cat__mask"></div>
+        <div class="cat__top"><span class="caps">02</span><span class="caps" data-cat-meta></span></div>
+        <div class="cat__label">
+          <h3>Moletons</h3>
+          <span class="cat__arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </section>
+
+    <!-- 6. MANIFESTO -->
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <div class="manifesto__inner">
+        <h2 class="eyebrow" id="manifesto-title" style="font-family:var(--sans)">Manifesto</h2>
+        <p class="manifesto__text" data-fill>Naim era uma cidade pequena. Foi na porta dela que um cortejo de morte encontrou a <em>Vida</em> — e a Vida não desviou. Nós vestimos esse encontro. Cada peça é um lembrete de que ninguém está longe demais, nem morto demais, para ouvir: <em>levanta-te.</em></p>
+        <div class="manifesto__foot">
+          <p class="caps">NAIN — desde 2024 · São Paulo, Brasil</p>
+          <a class="link-arrow" href="sobre.html">Conheça a história
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. MAIS VENDIDOS — carrossel arrastável -->
+    <section class="section best" aria-labelledby="best-title">
+      <header class="section__head">
+        <p class="eyebrow" data-reveal>Mais vendidos</p>
+        <h2 class="display display--lg" id="best-title" data-reveal="lines">Os que não<br><em>param em estoque</em></h2>
+        <div class="section__aside" data-reveal style="--d:.15s">
+          <p class="lead">Arraste para o lado. As peças mais pedidas das últimas semanas.</p>
+          <div class="best__nav">
+            <button type="button" class="round-btn" data-carousel-prev aria-label="Peças anteriores"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6-6 6 6 6"/></svg></button>
+            <button type="button" class="round-btn" data-carousel-next aria-label="Próximas peças"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </header>
+      <div class="carousel" data-carousel tabindex="0" role="region" aria-label="Mais vendidos — arraste ou use as setas">
+        <div class="carousel__track"></div>
+      </div>
+    </section>
+
+    <!-- 8. DEPOIMENTOS -->
+    <section class="section voices" aria-labelledby="voices-title" style="padding-top:0">
+      <header class="section__head">
+        <p class="eyebrow" data-reveal>Quem veste</p>
+        <h2 class="display display--lg" id="voices-title" data-reveal="lines">Vestido por<br><em>gente viva</em></h2>
+        <div class="section__aside" data-reveal style="--d:.15s">
+          <p class="rating"><span class="stars" style="--w:96%" role="img" aria-label="4,8 de 5 estrelas"><span class="stars__fill"></span></span> <strong>4,8</strong> <span class="muted">· 1.300+ avaliações</span></p>
+        </div>
+      </header>
+      <div class="voices__grid">
+        <figure class="voice voice--lead" data-reveal>
+          <span class="stars" style="--w:100%" role="img" aria-label="5 de 5 estrelas"><span class="stars__fill"></span></span>
+          <blockquote>“Usei o moletom Todavia no dia em que voltei para a igreja depois de dois anos. Ninguém sabia. Mas eu sabia o que estava escrito nas minhas costas.”</blockquote>
+          <figcaption><span class="voice__avatar" aria-hidden="true">G</span><div><strong>Gabriel S.</strong><span>Belo Horizonte, MG · Moletom Todavia</span></div></figcaption>
+        </figure>
+        <figure class="voice" data-reveal style="--d:.1s">
+          <span class="stars" style="--w:100%" role="img" aria-label="5 de 5 estrelas"><span class="stars__fill"></span></span>
+          <blockquote>“Qualidade de marca gringa, mensagem que importa. Meus amigos que nem são cristãos pediram o link.”</blockquote>
+          <figcaption><span class="voice__avatar" aria-hidden="true">M</span><div><strong>Marina C.</strong><span>São Paulo, SP · Camiseta Eis-me Aqui</span></div></figcaption>
+        </figure>
+        <figure class="voice" data-reveal style="--d:.2s">
+          <span class="stars" style="--w:100%" role="img" aria-label="5 de 5 estrelas"><span class="stars__fill"></span></span>
+          <blockquote>“É a primeira roupa de fé que eu uso sem sentir que estou fantasiado. É só roupa boa, com verdade.”</blockquote>
+          <figcaption><span class="voice__avatar" aria-hidden="true">J</span><div><strong>João Pedro A.</strong><span>Recife, PE · Moletom Nada Intencional</span></div></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 9. NEWSLETTER -->
+    <section class="newsletter on-dark" aria-labelledby="news-title">
+      <div class="newsletter__inner">
+        <div>
+          <p class="eyebrow" data-reveal>Newsletter</p>
+          <h2 class="display" id="news-title" data-reveal="lines">Receba a luz<br><em>primeiro.</em></h2>
+        </div>
+        <form class="newsletter__form" data-newsletter novalidate data-reveal style="--d:.15s">
+          <p class="lead">Drops, reposições e um devocional curto. Uma mensagem por semana, no máximo.</p>
+          <div class="field">
+            <label class="sr-only" for="news-email">Seu e-mail</label>
+            <div class="newsletter__row">
+              <input id="news-email" name="email" type="email" placeholder="seu@email.com" autocomplete="email" data-validate="required email">
+              <button type="submit">Assinar <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
+            </div>
+          </div>
+          <label class="check">
+            <input type="checkbox" name="consent" data-validate="required">
+            <span class="check__box" aria-hidden="true"></span>
+            <span>Aceito receber e-mails da NAIN. Posso sair quando quiser.</span>
+          </label>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Favoritos — NAIN</title>
+  <meta name="description" content="As peças NAIN que você salvou para depois.">
+  <meta name="theme-color" content="#0B0A08">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduce-motion');
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="favoritos">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <header class="page-head page-head--split">
+      <nav aria-label="Você está em"><ol class="crumbs"><li><a href="index.html">Início</a></li><li aria-current="page">Favoritos</li></ol></nav>
+      <h1 class="display">Favoritos</h1>
+      <div class="section__aside">
+        <p class="lead" data-fav-total></p>
+        <button type="button" class="link-arrow" data-fav-all>Adicionar tudo ao carrinho <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
+      </div>
+    </header>
+    
+    <section class="catalog" aria-label="Peças favoritas">
+      <div class="grid-products grid-products--4" data-fav-grid></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

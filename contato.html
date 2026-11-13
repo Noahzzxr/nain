@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato — NAIN</title>
+  <meta name="description" content="Fale com a NAIN: WhatsApp, e-mail ou formulário. Respondemos em até 1 dia útil.">
+  <meta name="theme-color" content="#0B0A08">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduce-motion');
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="contato">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <header class="page-head page-head--split">
+      <nav aria-label="Você está em"><ol class="crumbs"><li><a href="index.html">Início</a></li><li aria-current="page">Contato</li></ol></nav>
+      <h1 class="display" data-reveal="lines">Fale com<br><em>a gente</em></h1>
+      <p class="lead" data-reveal style="--d:.15s">Dúvida sobre tamanho, pedido ou troca? Uma pessoa de verdade responde — em até 1 dia útil.</p>
+    </header>
+    
+    <div class="contact">
+      <section aria-label="Canais de atendimento" data-reveal>
+        <ul class="contact__list">
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.500h16v11H9l-5 4z"/></svg><small>WhatsApp</small><a href="https://wa.me/5511999990000" target="_blank" rel="noopener">(11) 99999-0000</a></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="m4 6.500 8 6.500 8-6.500"/></svg><small>E-mail</small><a href="mailto:ola@nain.com.br">ola@nain.com.br</a></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M12 7.500V12l3 2"/></svg><small>Horário</small><span>Segunda a sexta, das 9h às 18h</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.500-5.800-6.500-11a6.500 6.500 0 0 1 13 0c0 5.200-6.500 11-6.500 11z"/><circle cx="12" cy="10" r="2.300"/></svg><small>Estúdio</small><span>Rua da Consolação, 000 — São Paulo, SP<br><span class="muted small">Sem loja física por enquanto. Visitas com hora marcada.</span></span></li>
+        </ul>
+        <p style="margin-top:1.5rem" class="muted">Talvez a resposta já esteja nas <a class="link" href="faq.html">dúvidas frequentes</a> ou na página de <a class="link" href="trocas.html">trocas e devoluções</a>.</p>
+      </section>
+    
+      <form class="form-grid" data-contact novalidate aria-label="Formulário de contato" data-reveal style="--d:.1s">
+        <div class="field col-3"><label class="field__label" for="ct-name">Nome</label><input class="field__input" id="ct-name" name="name" autocomplete="name" data-validate="required"></div>
+        <div class="field col-3"><label class="field__label" for="ct-email">E-mail</label><input class="field__input" id="ct-email" name="email" type="email" autocomplete="email" data-validate="required email"></div>
+        <div class="field col-3"><label class="field__label" for="ct-subject">Assunto</label>
+          <select id="ct-subject" name="subject" data-validate="required">
+            <option value="">Selecione</option><option>Dúvida sobre produto ou tamanho</option><option>Acompanhar pedido</option><option>Troca ou devolução</option><option>Atacado e parcerias</option><option>Outro assunto</option>
+          </select></div>
+        <div class="field col-3"><label class="field__label" for="ct-order">Nº do pedido <small>(opcional)</small></label><input class="field__input" id="ct-order" name="order" placeholder="NAIN-0000-00000"></div>
+        <div class="field"><label class="field__label" for="ct-msg">Mensagem</label><textarea id="ct-msg" name="message" data-validate="required min:10" placeholder="Conte como podemos ajudar"></textarea></div>
+        <div><button class="btn" type="submit">Enviar mensagem <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button></div>
+      </form>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

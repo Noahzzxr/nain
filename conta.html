@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minha conta — NAIN</title>
+  <meta name="description" content="Acompanhe seus pedidos, gerencie endereços e dados da sua conta NAIN.">
+  <meta name="theme-color" content="#0B0A08">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduce-motion');
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="conta">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <header class="page-head">
+      <nav aria-label="Você está em"><ol class="crumbs"><li><a href="index.html">Início</a></li><li aria-current="page">Minha conta</li></ol></nav>
+      <h1 class="display">Olá, <em data-hello>você</em></h1>
+      <p class="lead" data-since></p>
+    </header>
+    
+    <div class="account">
+      <div class="account__nav" role="tablist" aria-label="Seções da conta" aria-orientation="vertical">
+        <button type="button" role="tab" id="aba-pedidos" aria-controls="painel-pedidos" aria-selected="true">Pedidos</button>
+        <button type="button" role="tab" id="aba-enderecos" aria-controls="painel-enderecos" aria-selected="false" tabindex="-1">Endereços</button>
+        <button type="button" role="tab" id="aba-dados" aria-controls="painel-dados" aria-selected="false" tabindex="-1">Meus dados</button>
+        <a href="favoritos.html">Favoritos</a>
+        <button type="button" data-logout>Sair</button>
+      </div>
+      <div>
+        <section class="tabpanel" id="painel-pedidos" role="tabpanel" aria-labelledby="aba-pedidos"></section>
+        <section class="tabpanel" id="painel-enderecos" role="tabpanel" aria-labelledby="aba-enderecos" hidden></section>
+        <section class="tabpanel" id="painel-dados" role="tabpanel" aria-labelledby="aba-dados" hidden></section>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/account.js"></script>
+</body>
+</html>

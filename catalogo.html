@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coleção — NAIN</title>
+  <meta name="description" content="Camisetas e moletons NAIN: streetwear cristão em algodão pesado. Filtre por categoria, tamanho, cor e preço.">
+  <meta name="theme-color" content="#0B0A08">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduce-motion');
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="catalogo">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <header class="page-head page-head--split">
+      <nav aria-label="Você está em"><ol class="crumbs"><li><a href="index.html">Início</a></li><li aria-current="page" data-cat-crumb>Coleção</li></ol></nav>
+      <h1 class="display" data-cat-title>Coleção</h1>
+      <p class="lead" data-cat-lead>Uma coleção, um só enredo: o instante em que a escuridão perde.</p>
+    </header>
+    
+    <section class="catalog" aria-label="Produtos">
+      <div class="catalog__bar">
+        <button type="button" class="btn btn--ghost btn--sm catalog__filter-btn" data-open-filters><span style="display:inline-flex;gap:.6rem;align-items:center"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/></svg> Filtros</span><span data-filter-count></span></button>
+        <div class="catalog__sort"><label class="sr-only" for="sort">Ordenar por</label><select id="sort"></select></div>
+        <form class="catalog__search" role="search">
+          <label class="sr-only" for="cat-q">Buscar na coleção</label>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+          <input id="cat-q" type="search" placeholder="Buscar por peça, versículo ou cor" autocomplete="off">
+        </form>
+        <p class="catalog__count" data-count aria-live="polite"></p>
+      </div>
+      <div class="catalog__active chips" data-active aria-label="Filtros ativos"></div>
+    
+      <div class="catalog__layout">
+        <aside class="filters--side" data-filters-side aria-label="Filtros"></aside>
+        <div class="grid-products" data-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>

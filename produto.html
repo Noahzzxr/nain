@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peça — NAIN</title>
+  <meta name="description" content="Detalhes da peça NAIN: cores, tamanhos, guia de medidas, frete e o versículo que inspirou a estampa.">
+  <meta name="theme-color" content="#0B0A08">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduce-motion');
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="produto">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <nav class="pdp-crumbs" aria-label="Você está em"><ol class="crumbs" data-crumbs><li><a href="index.html">Início</a></li><li><a href="catalogo.html">Coleção</a></li></ol></nav>
+    
+    <div class="pdp" data-pdp>
+      <div class="skeleton" style="aspect-ratio:4/5"></div>
+      <div aria-hidden="true">
+        <div class="skeleton sk-line sk-line--short"></div>
+        <div class="skeleton" style="height:5rem;margin-top:1rem"></div>
+        <div class="skeleton sk-line" style="margin-top:2rem"></div>
+        <div class="skeleton sk-line sk-line--short"></div>
+        <div class="skeleton" style="height:3.4rem;margin-top:2rem"></div>
+        <div class="skeleton" style="height:3.4rem;margin-top:.75rem"></div>
+      </div>
+    </div>
+    
+    <section class="pverse on-dark" data-pverse aria-label="O versículo da peça"></section>
+    
+    <section class="reviews" id="avaliacoes" data-reviews aria-label="Avaliações"></section>
+    
+    <section class="related" data-related aria-labelledby="rel-title">
+      <header class="section__head">
+        <p class="eyebrow" data-reveal>Combine com</p>
+        <h2 class="display display--lg" id="rel-title" data-reveal="lines">Você também<br><em>pode vestir</em></h2>
+      </header>
+      <div class="grid-products grid-products--4" data-related-grid></div>
+    </section>
+  </main>
+
+  <div class="buybar" data-buybar>
+    <div><strong data-buybar-name></strong><span><span data-buybar-price></span> · <span data-buybar-meta></span></span></div>
+    <button type="button" class="btn btn--sm" data-buybar-add>Adicionar</button>
+  </div>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>

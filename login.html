@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar — NAIN</title>
+  <meta name="description" content="Entre ou crie sua conta NAIN para acompanhar pedidos, salvar endereços e favoritos.">
+  <meta name="theme-color" content="#0B0A08">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('reduce-motion');
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="login">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="auth">
+      <section class="auth__side on-dark" aria-label="Minha conta">
+        <p class="eyebrow">Minha conta</p>
+        <h1 class="display">Entre.<br>A casa é <em style="color:var(--accent)">sua.</em></h1>
+        <p class="serif-i" style="font-size:1.3rem;max-width:26ch;color:var(--muted-dark)">“Este meu filho estava morto e reviveu; tinha-se perdido e foi achado.” — Lc 15:24</p>
+      </section>
+    
+      <section class="auth__main" aria-label="Acesso à conta">
+        <div class="auth__box">
+          <div class="tabs" role="tablist" aria-label="Entrar ou criar conta">
+            <button type="button" class="tab" role="tab" id="tab-entrar" aria-controls="painel-entrar" aria-selected="true">Entrar</button>
+            <button type="button" class="tab" role="tab" id="tab-cadastro" aria-controls="painel-cadastro" aria-selected="false" tabindex="-1">Criar conta</button>
+          </div>
+    
+          <div class="tabpanel" id="painel-entrar" role="tabpanel" aria-labelledby="tab-entrar">
+            <form data-login novalidate>
+              <h2 class="display display--md">Que bom te ver de novo.</h2>
+              <div class="field"><label class="field__label" for="lg-email">E-mail</label><input class="field__input" id="lg-email" name="email" type="email" autocomplete="email" data-validate="required email"></div>
+              <div class="field"><label class="field__label" for="lg-pass">Senha</label><input class="field__input" id="lg-pass" name="password" type="password" autocomplete="current-password" data-validate="required"></div>
+              <button class="btn btn--block" type="submit">Entrar <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
+              <p class="small"><button type="button" class="link" data-forgot>Esqueci minha senha</button></p>
+            </form>
+          </div>
+    
+          <div class="tabpanel" id="painel-cadastro" role="tabpanel" aria-labelledby="tab-cadastro" hidden>
+            <form data-register novalidate>
+              <h2 class="display display--md">Crie sua conta em um minuto.</h2>
+              <div class="field"><label class="field__label" for="rg-name">Nome completo</label><input class="field__input" id="rg-name" name="name" autocomplete="name" data-validate="required name"></div>
+              <div class="field"><label class="field__label" for="rg-email">E-mail</label><input class="field__input" id="rg-email" name="email" type="email" autocomplete="email" data-validate="required email"></div>
+              <div class="field"><label class="field__label" for="rg-phone">Celular <small>(opcional)</small></label><input class="field__input" id="rg-phone" name="phone" type="tel" autocomplete="tel" inputmode="numeric" placeholder="(11) 90000-0000" data-mask="phone" data-validate="phone"></div>
+              <div class="field"><label class="field__label" for="rg-pass">Senha</label><input class="field__input" id="rg-pass" name="password" type="password" autocomplete="new-password" data-validate="required min:6"><p class="field__hint">Mínimo de 6 caracteres.</p></div>
+              <div class="field"><label class="field__label" for="rg-pass2">Confirmar senha</label><input class="field__input" id="rg-pass2" name="password2" type="password" autocomplete="new-password" data-validate="required match:#rg-pass"></div>
+              <label class="check"><input type="checkbox" name="terms" data-validate="required"><span class="check__box" aria-hidden="true"></span><span>Li e aceito os <a class="link" href="faq.html#privacidade">termos e a política de privacidade</a>.</span></label>
+              <button class="btn btn--block" type="submit">Criar conta <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
+            </form>
+          </div>
+    
+          <p class="note"><span>Demonstração: sua conta fica salva apenas neste navegador. Não use uma senha real.</span></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/account.js"></script>
+</body>
+</html>
